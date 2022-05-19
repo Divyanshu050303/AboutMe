@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
             EditText.visibility=View.GONE
             DoneButton.visibility=View.GONE
             NickNameText.visibility=View.VISIBLE
+
         }
         val imm=getSystemService(Context.INPUT_METHOD_SERVICE)as InputMethodManager
         imm.hideSoftInputFromWindow(view.windowToken,0)
