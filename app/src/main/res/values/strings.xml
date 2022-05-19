@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">About me</string>
+    <string name="name">Divyanshu singh</string>
+    <string name="yellow_star">Yellow star</string>
+    <string name="bio">Hi, my name is Divyanshu singh.
+    \n\nI enjoy learning new things.
+    \n\nI am learning how to develop android app using kotlin.
+    \n\ntill now i create a small app dice roller app.
+    \n\n if you want to see check my github.
+    \n\nmy gitHub ID is Divyanshu050303
+    \n\nI am a person who is positive about every aspect of life. There are many things I like to d
+    \n\n, to see, and to experience.
+    \n\nI like to read, I like to write; I like to think, I like to dream;
+    \n\nI like to talk, I like to listen. I like to see the sunrise in the morning,
+    \n\nI like to see the moonlight at night; I like to feel the music flowing on my face,
+    \n\nI like to smell the wind coming from the ocean. I like to look at the clouds in the sky with
+    \n\na blank mind, I like to do thought experiment when I cannot sleep in the middle of the
+    \n\nnight. I like flowers in spring, rain in summer, leaves in autumn, and snow in winter.
+    \n\nI like to sleep early, I like to get up late; I like to be alone, I like to be surrounded
+    \n\nby people. I like country’s peace, I like metropolis’ noise; I like the beautiful west lake
+    \n\nin Hangzhou, I like the flat cornfield in Champaign. I like delicious food and comfortable
+    \n\nshoes; I like good books and romantic movies.
+    \n\nI like the land and the nature, I like people. And, I like to laugh.</string>
+    <string name="what_is_you_nickname">What is you nickName</string>
+    <string name="done">Done</string>
+</resources>
