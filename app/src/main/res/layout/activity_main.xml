@@ -1,62 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-<LinearLayout
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
-
-    <TextView
-        android:id="@+id/name_text"
+    <data>
+        <variable
+            name="myName"
+            type="com.example.aboutme.myName" />
+    </data>
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/name"
-        android:textAlignment="center"
-        android:textColor="@android:color/black" />
-
-    <EditText
-        android:id="@+id/Edit_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/what_is_you_nickname"
-        android:textAlignment="center" />
-    <Button
-        android:id="@+id/Done_button"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/done"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="@dimen/layout_margin"
-        />
-    <TextView
-        android:id="@+id/NickName_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:visibility="gone"
-        android:textColor="@android:color/black"
-        android:textAlignment="center"/>
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:contentDescription="@string/yellow_star"
-        app:srcCompat="@android:drawable/btn_star_big_on"
-        />
-
-    <ScrollView
-
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:orientation="vertical">
 
         <TextView
-            android:id="@+id/boi_text"
+            android:id="@+id/name_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/bio"
-            android:lineSpacingMultiplier="1.2"/>
-    </ScrollView>
+            android:text="@{myName.name, default=my_default}"
+            android:textAlignment="center"
+            android:textColor="@android:color/black" />
 
-</LinearLayout>
+        <EditText
+            android:id="@+id/Edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/what_is_you_nickname"
+            android:textAlignment="center" />
+        <Button
+            android:id="@+id/Done_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/done"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/layout_margin"
+            />
+        <TextView
+            android:id="@+id/NickName_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="@{myName.nickname, default=my_default}"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/yellow_star"
+            app:srcCompat="@android:drawable/btn_star_big_on"
+            />
+
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/boi_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bio"
+                android:lineSpacingMultiplier="1.2"/>
+        </ScrollView>
+
+    </LinearLayout>
 </layout>
